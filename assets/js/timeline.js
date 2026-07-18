@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const DEFAULT_BANNER = 'assets/images/frame-logo.jpg';
+  const DEFAULT_BANNER = 'assets/images/frame-logo.svg';
 
   const timelineData = {
     handover: {
@@ -101,8 +101,8 @@
       ],
       resources: [
         {
-          label: '열람용 회칙 PDF',
-          href: 'documents/frame-bylaws-public-2026-07-10.pdf'
+          label: '열람용 회칙',
+          href: 'documents/frame-bylaws-public-2026-07-10.html'
         },
         {
           label: '상세 기록',
@@ -169,10 +169,8 @@
       const link = document.createElement('a');
       link.href = resource.href;
       link.textContent = resource.label;
-      if (resource.href.endsWith('.pdf')) {
-        link.target = '_blank';
-        link.rel = 'noopener';
-      }
+      link.target = '_blank';
+      link.rel = 'noopener';
       return link;
     });
     resources.replaceChildren(...links);
