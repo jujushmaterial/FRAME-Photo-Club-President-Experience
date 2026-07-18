@@ -49,7 +49,7 @@ An ongoing experience portfolio documenting organizational governance, bylaw ref
 
 ## Public Documents
 
-- [2026년도 창작전시분과 FRAME 동아리회칙 · 열람용 PDF](documents/frame-bylaws-public-2026-07-10.pdf)
+- [2026년도 창작전시분과 FRAME 동아리회칙 · 열람용 웹 문서](documents/frame-bylaws-public-2026-07-10.html)
 - [회장직 인수인계 및 운영체계 점검](timeline/2026-07-01-handover-and-operational-review.md)
 - [회칙 개정 임시총회 상세 기록](timeline/2026-07-10-extraordinary-general-meeting.md)
 
@@ -63,13 +63,14 @@ FRAME-Photo-Club-President-Experience/
 ├─ index.html
 ├─ assets/
 │  ├─ css/
-│  │  └─ style.css
+│  │  ├─ style.css
+│  │  └─ document.css
 │  ├─ js/
 │  │  └─ timeline.js
 │  └─ images/
-│     └─ frame-logo.jpg
+│     └─ frame-logo.svg
 ├─ documents/
-│  └─ frame-bylaws-public-2026-07-10.pdf
+│  └─ frame-bylaws-public-2026-07-10.html
 ├─ timeline/
 │  ├─ README.md
 │  ├─ 2026-07-01-handover-and-operational-review.md
@@ -97,11 +98,12 @@ FRAME-Photo-Club-President-Experience/
 → 해당 이미지를 배너로 사용
 
 전용 이미지가 없는 경우
-→ assets/images/frame-logo.jpg를 기본 배너로 사용
+→ assets/images/frame-logo.svg를 기본 배너로 사용
 ```
 
 ## Links
 
+- [Published Experience Page](https://jujushmaterial.github.io/FRAME-Photo-Club-President-Experience/)
 - [Main Portfolio](https://jujushmaterial.github.io/)
 - [Experience Page](https://jujushmaterial.github.io/experience.html)
 - [FRAME Instagram](https://www.instagram.com/ssu_frame/?hl=ko)
