@@ -1,6 +1,6 @@
-# FRAME Photo Club President Experience
+# 26-2 FRAME 회장 Experience
 
-숭실대학교 중앙 사진동아리 **FRAME**의 회장 활동과 조직 운영 개선 과정을 기록하는 Experience Portfolio 저장소입니다.
+숭실대학교 중앙 사진동아리 **FRAME**의 2026학년도 2학기 회장 활동을 기록하는 Experience Portfolio 저장소입니다.
 
 - **Period:** 2026.07.01–Present
 - **Status:** In Progress
@@ -10,17 +10,13 @@
 
 ## Overview
 
-FRAME은 사진 촬영, 디지털 사진 편집, 정기출사, 소모임 출사 및 전시 활동을 중심으로 운영되는 숭실대학교 창작전시분과 중앙동아리입니다.
+FRAME은 2017년에 창립되어 사진 촬영, 디지털 사진 편집, 정기출사, 소모임 출사 및 전시 활동을 중심으로 활발히 운영되는 디지털 사진동아리입니다.
 
-이 저장소는 단순 활동 목록이 아니라, 회장직 인수인계 이후 진행한 운영체계 점검, 총회, 회칙 개정, 출사, 전시 및 주요 의사결정의 배경과 결과를 시간순으로 기록하기 위해 제작했습니다. 공개 웹페이지에서는 동아리 소개와 타임라인을 간결하게 보여주고, 각 타임라인 항목을 선택하면 해당 활동의 배경·목적·과정·결과·관련 자료를 확인할 수 있도록 구성합니다.
+이 저장소는 회장직 인수인계 이후 진행한 운영체계 점검, 총회, 회칙 개정 및 주요 활동의 배경과 결과를 시간순으로 기록하기 위해 제작했습니다. 공개 웹페이지에서는 동아리 소개와 타임라인을 간결하게 보여주고, 각 타임라인 항목을 선택하면 해당 활동의 상세 내용을 확인할 수 있도록 구성합니다.
 
 ## Summary
 
 An ongoing experience portfolio documenting organizational governance, bylaw reform, and major activities as President of FRAME, Soongsil University’s central photography club.
-
-## Current Scope
-
-현재 공개 범위는 2026학년도 2학기 운영 준비 과정과 2026년 7월 10일 제3차 회칙 개정 임시총회입니다. 이후 정기출사, 개강총회, 축제, 전시회 및 학기 결산이 진행될 때마다 타임라인을 순차적으로 추가합니다.
 
 ## Timeline
 
@@ -64,6 +60,7 @@ FRAME-Photo-Club-President-Experience/
 ├─ assets/
 │  ├─ css/
 │  │  ├─ style.css
+│  │  ├─ frame-overrides.css
 │  │  └─ document.css
 │  ├─ js/
 │  │  └─ timeline.js
@@ -98,7 +95,7 @@ FRAME-Photo-Club-President-Experience/
 → 해당 이미지를 배너로 사용
 
 전용 이미지가 없는 경우
-→ assets/images/frame-logo.svg를 기본 배너로 사용
+→ 메인 포트폴리오의 assets/images/experience/frame-logo.jpg를 기본 배너로 사용
 ```
 
 ## Links
