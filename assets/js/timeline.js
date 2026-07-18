@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const DEFAULT_BANNER = 'assets/images/frame-logo.svg';
+  const DEFAULT_BANNER = 'https://jujushmaterial.github.io/assets/images/experience/frame-logo.jpg?v=20260718-1';
 
   const timelineData = {
     handover: {
@@ -38,12 +38,7 @@
           ]
         }
       ],
-      resources: [
-        {
-          label: '임시총회 기록 보기',
-          href: 'timeline/2026-07-10-extraordinary-general-meeting.md'
-        }
-      ]
+      resources: []
     },
     bylaws: {
       date: '2026.07.10',
@@ -103,10 +98,6 @@
         {
           label: '열람용 회칙',
           href: 'documents/frame-bylaws-public-2026-07-10.html'
-        },
-        {
-          label: '상세 기록',
-          href: 'timeline/2026-07-10-extraordinary-general-meeting.md'
         }
       ]
     }
@@ -125,6 +116,16 @@
   if (!modal || !dialog || !banner || !date || !title || !summary || !sections || !resources) {
     return;
   }
+
+  const bannerShell = banner.parentElement;
+  banner.addEventListener('load', () => {
+    banner.hidden = false;
+    bannerShell?.classList.remove('is-fallback');
+  });
+  banner.addEventListener('error', () => {
+    banner.hidden = true;
+    bannerShell?.classList.add('is-fallback');
+  });
 
   const createSection = (section) => {
     const wrapper = document.createElement('section');
@@ -158,6 +159,8 @@
     if (!item) return;
 
     lastTrigger = trigger;
+    banner.hidden = false;
+    bannerShell?.classList.remove('is-fallback');
     banner.src = item.banner || DEFAULT_BANNER;
     banner.alt = `${item.title} banner`;
     date.textContent = item.date;
@@ -174,6 +177,7 @@
       return link;
     });
     resources.replaceChildren(...links);
+    resources.hidden = links.length === 0;
 
     modal.hidden = false;
     document.body.classList.add('modal-open');
