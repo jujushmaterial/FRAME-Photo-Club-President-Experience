@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const DEFAULT_BANNER = 'https://jujushmaterial.github.io/assets/images/experience/frame-logo.jpg?v=20260718-1';
+  const DEFAULT_BANNER = 'https://jujushmaterial.github.io/assets/images/experience/frame-logo.jpg?v=20260718-2';
 
   const timelineData = {
     handover: {
