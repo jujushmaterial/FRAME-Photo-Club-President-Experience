@@ -1,4 +1,4 @@
-# 26-2 FRAME 회장 Experience
+# FRAME 사진동아리 회장 활동 기록
 
 숭실대학교 중앙 사진동아리 **FRAME**의 2026학년도 2학기 회장 활동을 기록하는 Experience Portfolio 저장소입니다.
 
