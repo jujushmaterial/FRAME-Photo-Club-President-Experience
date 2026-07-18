@@ -26,14 +26,10 @@ jobs:
         with:
           enablement: true
 
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v4
         with:
-          source: ./
-          destination: ./_site
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
+          path: .
 
   deploy:
     environment:
@@ -44,4 +40,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4
